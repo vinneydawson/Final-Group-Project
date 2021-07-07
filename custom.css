@@ -32,3 +32,22 @@ a {
 a:hover {
     color:#F86E4E;
 }
+
+
+/*Christine Added*/
+
+.hours {
+    max-width: 400px;
+}
+
+.phone {
+    color: #F86E4E;
+}
+
+.col-md-4{
+    width: 55%;
+}
+
+.col-md-8{
+    width: 45%;
+}
