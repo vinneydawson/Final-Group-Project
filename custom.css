@@ -1,0 +1,34 @@
+/* Button Colors */
+.btn-primary {
+    height: 48px;
+    background-color: #F86E4E;
+    border-color: #F86E4E;
+}
+
+.btn-primary:hover {
+    background-color: #EC522F;
+    border-color: #F86E4E;
+}
+
+/* Review Stars Color */
+#stars {
+    color: #547FF3;
+}
+
+/* Navigation Links Color */
+.nav-link {
+    color: gray;
+}
+
+.nav-link:hover {
+    color:#F86E4E;
+}
+
+/* Body Links Color */
+a {
+    color:gray;
+}
+
+a:hover {
+    color:#F86E4E;
+}
