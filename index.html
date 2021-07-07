@@ -10,6 +10,8 @@
     <script src="https://kit.fontawesome.com/88ee37ebb4.js" crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="custom.css">
+    <script src="animation.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>FoodPantries.org</title>
   </head>
   <body>
@@ -112,11 +114,9 @@
     <div class="container px-4 py-5" id="featured-3">
       <h2 class="pb-2 border-bottom">We Can Help You</h2>
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="feature col">
-          <div class="feature-icon bg-primary bg-gradient">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
-            </svg>
+        <div class="col">
+          <div>
+            <img src="assets/images/icons/pin.png" height="70"></img>
           </div>
           <h2>Food Pantries</h2>
           <p>Find local pantries, soup kitchens, food shelves, food banks and other food help.</p>
@@ -127,9 +127,7 @@
         </div>
         <div class="feature col">
           <div class="feature-icon bg-primary bg-gradient">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
-            </svg>
+            <img src="assets/images/icons/bag.png" height="70"></img>
           </div>
           <h2>Subsidized Groceries</h2>
           <p>FoodPantries.org works hard to gather the best government and non profit subsidized grocery resources on the Internet.</p>
@@ -140,9 +138,7 @@
         </div>
         <div class="feature col">
           <div class="feature-icon bg-primary bg-gradient">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-            </svg>
+            <img src="assets/images/icons/info.png" height="70"></img>
           </div>
           <h2>Pantry Details & Hours</h2>
           <p>FoodPantries.org displays pantry hours, details, websites where we find them.</p>
@@ -156,32 +152,33 @@
 
     <!-- Recently Added Food Pantries -->
     <div class="container">
-      <h2 class="pb-2 border-bottom">We Can Help You</h2>
+      <h2 class="pb-2 border-bottom">Recently Added Food Pantries</h2>
       <div class="row">
         <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="/assets/images/recently-added-01.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Read Review</a>
+            <h5 class="card-title">Samaritans Together 
+              of Henry County</h5>
+            <p class="card-text">Stockbridge, GA</p>
+            <a href="#" class="btn btn-primary">View Pantry</a>
           </div>
         </div>
 
         <div class="card" style="width: 18rem;">
           <img src="..." class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Read Review</a>
+            <h5 class="card-title">Forney Food Pantry</h5>
+            <p class="card-text">Forney, TX</p>
+            <a href="#" class="btn btn-primary">View Pantry</a>
           </div>
         </div>
 
         <div class="card" style="width: 18rem;">
           <img src="..." class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Read Review</a>
+            <h5 class="card-title">Conway Care Center</h5>
+            <p class="card-text">Morrilton, AR</p>
+            <a href="#" class="btn btn-primary">View Pantry</a>
             </div>
           </div>
       </div>
@@ -438,7 +435,7 @@
 
                 <div class="col-md-12 col-lg-4">
                   <h4>Stay In Touch</h4>
-                  <form class="p-4 p-md-5 rounded-3 bg-light">
+                  <form class="p-4 p-md-1 rounded-3 bg-light">
                     <div class="form-floating mb-3">
                       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                       <label for="floatingInput">Email Address</label>
@@ -446,7 +443,9 @@
                     <button class="btn btn-primary" type="submit">Subscribe</button>
                 </div>
 
-              
+                <div class="row">
+                  <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> FoodPantries.org All Rights Reserved</p>
+                </div>
             </div>
           </div>
           </footer>         
