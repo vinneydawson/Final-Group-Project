@@ -51,3 +51,39 @@ a:hover {
 .col-md-8{
     width: 45%;
 }
+
+.review-section {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+   
+}
+
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    text-align: left;
+}
+
+.write-review{
+    height: 340px;
+}
+
+.card-body{
+    padding: 2rem;
+}
+
+.write-a-review {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.row {
+    place-items: center;
+}
