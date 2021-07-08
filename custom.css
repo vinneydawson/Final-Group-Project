@@ -57,6 +57,7 @@ a:hover {
     padding-top: 3rem;
     padding-bottom: 3rem;
     position: relative;
+   
 }
 
 .centered {
@@ -81,4 +82,8 @@ p {
 .write-a-review {
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+.row {
+    place-items: center;
 }
