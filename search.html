@@ -102,22 +102,32 @@
           <li class="nav-item"><a class="nav-link" id="navSocials" href="https://www.facebook.com/FoodPantriesorg"><i class="fab fa-facebook-f"></i></a></li>
           <li class="nav-item"><a class="nav-link" id="navSocials" href="404page.html"><i class="fab fa-instagram"></i></a></li>
           <li class="nav-item"><a class="nav-link" id="navSocials" href="404page.html"><i class="fab fa-twitter"></i></a></li>
-          <button type="button" class="btn btn-primary" id="navButton">Partner With Us</button>
+          <a class="btn btn-primary" href="404page.html" id="navButton">Partner With Us</a>
         </ul>
       </header>
     </div>
 
     <!-- Search Section -->
     <div class="container">
+      <div class ="search">
       <div class="row">
-          <div class="col-lg-5 p-3 p-lg-5 pt-lg-3" id="searchForm"><h1 class="display-4 fw-bold lh-1">Enter Your City To Start</h1>
+          <div class="col-lg-5 p-3 p-lg-5 pt-lg-3" id="searchForm"><h2>Don't Stay Hungry</h2>
             <div class="hotel-search">
-                <div id="findhotels"><h4>Find Food Banks in:</h4></div>
+                <div id="findhotels"><h5>Find local food resources today!</h5></div> <br>
           
                 <div id="locationField">
                   <input class="form-control-lg mb-3" id="autocomplete" placeholder="Enter a city" type="text" />
                 </div>
-          
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Food Pantries" checked>
+                  <label class="form-check-label" for="inlineCheckbox1">Food Pantries</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Subsidized Groceries" checked>
+                  <label class="form-check-label" for="inlineCheckbox2">Subsidized Groceries</label>
+                </div>
+          <!--
                 <div id="controls">
                   <select class="form-select form-select-lg mb-3" id="country">
                     <option value="all">All</option>
@@ -136,12 +146,18 @@
                     <option value="uk">United Kingdom</option>
                   </select>
                 </div>
+                 -->
               </div>
+           
         </div>
           <div class="col"><div id="map"></div></div>
       </div>
   
+      
+</div>
+
       <div class="container">
+        <div class ="results">
         <div id="listing">
             <table id="resultsTable">
             <tbody id="results"></tbody>
@@ -176,7 +192,7 @@
         </div>
     </div>
   </div>
-
+</div>
           <!-- Footer -->
 
           <footer class="bg-light text-black pt-5 pb-4">
@@ -201,9 +217,6 @@
                 </p>
                 <p>
                   <a href="search.html" class="text-black" style="text-decoration: none;">Find A Food Bank</a>
-                </p>
-                <p>
-                  <a href="404page.html" class="text-black" style="text-decoration: none;">Partner With Us</a>
                 </p>
           
                 </div>
@@ -257,6 +270,7 @@
               </div>
           
             </div>
+
             
           </footer>       
 
