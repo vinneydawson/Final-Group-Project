@@ -7,16 +7,19 @@
 .btn-primary {
     background-color: #F86E4E;
     border-color: #F86E4E;
+    transform-style: preserve-3d;
 }
 
 .btn-primary:hover {
     background-color: #EC522F;
     border-color: #F86E4E;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
 }
 
 #heroButtonText {
     text-decoration: none;
     color: #fff;
+    transform: translateZ(30px);
 }
 
 /* Review Stars Color */
@@ -116,13 +119,4 @@ tr {
 
 #searchForm {
     margin-left: 3%;
-}
-
-.box {
-    width: 300px;
-    height: 800px;
-    background-color: black;
-    margin: auto;
-    box-shadow: 0 0 4px 0 #547FF3;
-    transform-style: preserve-3d;
 }
