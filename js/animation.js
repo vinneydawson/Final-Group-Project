@@ -4,13 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
         perspective: 500,
         easing: 'cubic-bezier(0.21, 0.83, 0, 0.99)'
     })
-    $('#heroImage, #contactButton').tilt({
-        perspective: 500,
+    
+    $('#contactButton, .heroWrapper').tilt({
+        perspective: 800,
         easing: 'cubic-bezier(0.21, 0.83, 0, 0.99)'
     })
+    
     $('.card').tilt({
         perspective: 1000,
-        easing: 'cubic-bezier(0.21, 0.83, 0, 0.99)'
+        easing: 'cubic-bezier(0.21, 0.83, 0, 0.99)',
+        glare: true,
+        maxGlare: .3
     })
 
     $('#404ErrorImage').tilt({
@@ -31,17 +35,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Button //
     anime({
-        targets: '#heroButton',
+        targets: '#heroButtonText',
         translateY: [20, 0],
         opacity: [0, 1],
         easing: 'easeOutExpo',
         delay: 600,
     })
 
-    // Image //
+    // Hero Images //
     anime({
         targets: '#heroImage',
         translateX: [50, 0],
+        easing: 'easeOutExpo',
+        opacity: [0, 1],
+        delay: 500,
+    })
+
+    anime({
+        targets: '#heroImage2',
+        translateX: [-50, 0],
         easing: 'easeOutExpo',
         opacity: [0, 1],
         delay: 500,
