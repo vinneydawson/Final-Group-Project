@@ -1,6 +1,10 @@
 /* Button Colors */
-.btn-primary {
+
+#navButton {
     height: 48px;
+}
+
+.btn-primary {
     background-color: #F86E4E;
     border-color: #F86E4E;
 }
@@ -112,4 +116,13 @@ tr {
 
 #searchForm {
     margin-left: 3%;
+}
+
+.box {
+    width: 300px;
+    height: 800px;
+    background-color: black;
+    margin: auto;
+    box-shadow: 0 0 4px 0 #547FF3;
+    transform-style: preserve-3d;
 }
