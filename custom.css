@@ -22,6 +22,10 @@
     transform: translateZ(30px);
 }
 
+#contactButton {
+    transform-style: preserve-3d;
+}
+
 /* Review Stars Color */
 #stars {
     color: #547FF3;
