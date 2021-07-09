@@ -74,21 +74,33 @@
       </svg>
   
 
-    <!-- Navigation Header -->
-    <div class="container">
+     <!-- Navigation Header -->
+     <div class="container">
       <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
           <img src="assets/images/header-logo.png" height="70"></img>
         </a>
 
         <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Resources</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></li>
-          <button type="button" class="btn btn-primary">Partner With Us</button>
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="search.html">Find A Food Bank</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://www.homelessshelterdirectory.org/foodbanks/index.html">HSD Food Resources</a></li>
+              <li><a class="dropdown-item" href="https://www.freefood.org/">Freefood.org</a></li>
+              
+              
+            </ul>
+          </li>
+          <li class="nav-item"><a href="404page.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" id="navSocials" href="https://www.facebook.com/FoodPantriesorg"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="nav-item"><a class="nav-link" id="navSocials" href="404page.html"><i class="fab fa-instagram"></i></a></li>
+          <li class="nav-item"><a class="nav-link" id="navSocials" href="404page.html"><i class="fab fa-twitter"></i></a></li>
+          <button type="button" class="btn btn-primary" id="navButton">Partner With Us</button>
         </ul>
       </header>
     </div>
@@ -228,3 +240,85 @@
       </div>
 
       
+       <!-- Footer -->
+
+       <footer class="bg-light text-black pt-5 pb-4">
+
+        <div class="container text-center text-md-left">
+      
+          <div class="row text-center text-md-left">
+      
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-black">FoodPantries.org</h5>
+              <p>Food Pantries is not associated with any government agency or nonprofit organization. We list Food Pantries centers throughout the US.</p>
+              
+            </div>
+      
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-black">Useful Links</h5>
+            <p>
+              <a href="https://www.homelessshelterdirectory.org/foodbanks/index.html" class="text-black" style="text-decoration: none;">HSD Food Resources</a>
+            </p>
+            <p>
+              <a href="https://www.freefood.org/" class="text-black" style="text-decoration: none;">Freefood.org</a>
+            </p>
+            <p>
+              <a href="search.html" class="text-black" style="text-decoration: none;">Find A Food Bank</a>
+            </p>
+            <p>
+              <a href="404page.html" class="text-black" style="text-decoration: none;">Partner With Us</a>
+            </p>
+      
+            </div>
+      
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-black">Newsletter</h5>
+              <form class="row g-3">
+                <div class="col-auto">
+                  <label for="staticEmail2" class="visually-hidden">Email</label>
+                  <input type="text" class="form-control" id="staticEmail2" placeholder="Email Address">
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary mb-3">Subscribe</button>
+                </div>
+              </form>
+            </div>
+            
+          </div>
+      
+          <hr class="mb-4">
+      
+          <div class="row align-items-center">
+      
+            <div class="col-md-7 col-lg-8">
+              <p>	Copyright ©2021 All rights reserved by:
+                <a href="#" style="text-decoration: none;">
+                  <strong class="text-black">Baked Ziti UX Group</strong>
+                </a></p>
+              
+            </div>
+      
+            <div class="col-md-5 col-lg-4">
+              <div class="text-center text-md-right">
+      
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <a href="https://www.facebook.com/FoodPantriesorg" class="btn-floating btn-sm text-black" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="404page.html" class="btn-floating btn-sm text-black" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="404page.html" class="btn-floating btn-sm text-black" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+                
+              </div>
+              
+            </div>
+            
+          </div>
+      
+        </div>
+        
+      </footer>       
