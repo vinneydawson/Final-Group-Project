@@ -1,4 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
+    $('#heroButtonText').tilt({
+        scale: 1.2,
+        perspective: 500,
+        easing: 'cubic-bezier(0.21, 0.83, 0, 0.99)'
+    })
+    $('#heroImage, #contactButton').tilt({
+        perspective: 500,
+        easing: 'cubic-bezier(0.21, 0.83, 0, 0.99)'
+    })
+    $('.card').tilt({
+        perspective: 1000,
+        easing: 'cubic-bezier(0.21, 0.83, 0, 0.99)'
+    })
     // HERO //
     let heroHeading = document.querySelector('#heroHeading');
     
@@ -47,3 +60,5 @@ document.addEventListener("DOMContentLoaded", () => {
         delay: 1000
     })
 })
+
+
