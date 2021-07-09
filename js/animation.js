@@ -12,6 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
         perspective: 1000,
         easing: 'cubic-bezier(0.21, 0.83, 0, 0.99)'
     })
+
+    $('#404ErrorImage').tilt({
+        perspective: 1000,
+        easing: 'cubic-bezier(0.21, 0.83, 0, 0.99)'
+    })
     // HERO //
     let heroHeading = document.querySelector('#heroHeading');
     
