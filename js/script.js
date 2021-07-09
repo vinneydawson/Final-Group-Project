@@ -109,7 +109,7 @@ function onPlaceChanged() {
 function search() {
   const search = {
     bounds: map.getBounds(),
-    types: ["meal_takeaway"],
+    types: ["supermarket"],
   };
   places.nearbySearch(search, (results, status, pagination) => {
     if (status === google.maps.places.PlacesServiceStatus.OK && results) {
