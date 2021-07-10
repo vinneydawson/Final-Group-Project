@@ -2,12 +2,16 @@ document.addEventListener("DOMContentLoaded", () => {
     $('#heroButtonText').tilt({
         scale: 1.2,
         perspective: 500,
-        easing: 'cubic-bezier(0.21, 0.83, 0, 0.99)'
+        easing: 'cubic-bezier(0.21, 0.83, 0, 0.99)',
+        glare: true,
+        maxGlare: .3
     })
     
     $('#contactButton, .heroWrapper').tilt({
         perspective: 800,
-        easing: 'cubic-bezier(0.21, 0.83, 0, 0.99)'
+        easing: 'cubic-bezier(0.21, 0.83, 0, 0.99)',
+        glare: true,
+        maxGlare: .3
     })
     
     $('.card').tilt({
