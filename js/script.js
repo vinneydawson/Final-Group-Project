@@ -64,6 +64,7 @@ const countries = {
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
+    mapId: "38ca4c609f81275f",
     zoom: countries["us"].zoom,
     center: countries["us"].center,
     mapTypeControl: false,
@@ -179,7 +180,8 @@ function addResult(result, i) {
   tr.style.backgroundColor = i % 2 === 0 ? "#F0F0F0" : "#FFFFFF";
 
   tr.onclick = function () {
-    google.maps.event.trigger(markers[i], "click");
+    google.maps.event.trigger(markers[i], "click"); 
+    window.location = "https://www.google.com/"; // Replace this link to navigate to details page
   };
   const iconTd = document.createElement("td");
   const nameTd = document.createElement("td");
