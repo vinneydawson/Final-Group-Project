@@ -153,6 +153,7 @@ tr {
     transform: translateZ(60px);
     color: #FFDED7;
     opacity: 95%;
+    z-index: 1;
     
 }
 
