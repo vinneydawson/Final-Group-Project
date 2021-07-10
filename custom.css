@@ -113,6 +113,7 @@ p {
 #map {
     height: 40vh;
     width: 100%;
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.1);
 }
 
 table {
