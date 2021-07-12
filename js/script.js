@@ -181,7 +181,7 @@ function addResult(result, i) {
 
   tr.onclick = function () {
     google.maps.event.trigger(markers[i], "click"); 
-    window.location = "foodpantrydetailsgroceries.html"; // Replace this link to navigate to details page
+    window.location = "foodpantrydetailsGroceries.html"; // Replace this link to navigate to details page
   };
   const iconTd = document.createElement("td");
   const nameTd = document.createElement("td");
